@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="lelabo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -55,13 +56,12 @@
     <section class="home" id="home">
 
         <div class="content">
-            <h3>FIND YOUR SCENT</h3>
+            <h3 class="animate__bounceIn" id="animate__bounceIn">FIND YOUR SCENT</h3>
             <p>Let's take a look at the greatness of the scent</p>
-            <a href="#" class="btn">get yours now</a>
+            <a href="#classiccollection" class="btn">get yours now</a>
         </div>
     </section>
     <!--home section ends-->
-
 
     <!--manifesto section starts-->
 
@@ -86,7 +86,7 @@
                         <p>우리는 비록 젊음 그 자체가 영원하지는 않아도, 우리 모두 영원히 젊은 마음으로 살 수는 있다고 믿습니다.</p>
                         <p>우리는 구구절절한 설명이 예술을 망가뜨린다고 믿습니다.</p>
                         <p>그러니 여러분, 이 모든 설명은 그냥 다 잊어버리세요!</p>
-                        <a href="#" class="btn">find out more</a>
+                        <a href="#lab" class="btn">find out more</a>
                 </div>
             </div>
     </section>
@@ -96,7 +96,7 @@
 
 
     <!--lab section starts-->
-    <secttion class="lab" id="lab">
+    <section class="lab" id="lab">
         <h1 class="heading"> le labo <span>lab</span> </h1>
         <div class="box-container">
             <div class="box">
@@ -116,7 +116,7 @@
                 <h3>리필</h3>
             </div>
         </div>
-    </secttion>
+    </section>
 
     <!--lab section ends-->
 
@@ -124,7 +124,7 @@
     <!--community section starts-->
 
 
-    <!-- <secttion class="community" id="community">
+    <!-- <section class="community" id="community">
         <h1 class="heading"> le labo <span>community</span></h1>
         <p>르 라보를 함께 만들어가는 장인 공동체… 목공예가부터 금속공예가, 캔들 공예가, 랩 테크니션, 장미 수확자, 일러스트레이터에 이르기까지...
             아, 그리고 조향사를 빼놓을 수 없죠!</p>
@@ -161,24 +161,24 @@
             </div>
             
         </div>
-    </secttion> -->
+    </section> -->
 
 
 
     <!--community section starts-->
-    <secttion class="community" id="community">
+    <section class="community" id="community">
         <h1 class="heading"> le labo <span>community</span> </h1>
         <p>르 라보를 함께 만들어가는 장인 공동체… 목공예가부터 금속공예가, 캔들 공예가, 랩 테크니션, 장미 수확자, 일러스트레이터에 이르기까지...<br>
             아, 그리고 조향사를 빼놓을 수 없죠!</p>
         <div class="box-container">
             <div class="box">
-                <video class="bgvid">
+                <video autoplay playsinline muted loop class="bgvid">
                     <source src="/project1/media/sanderwood.mp4" type="video/mp4">
                 </video>
                 <h1>샌달우드 수확</h1>
                 <p>호주 킴벌리</p>
-                    <p>호주 킴벌리의 아름다운 풍경을 통한 놀라운 여행. 샌달우드를 재배하는 농부 에드워드(Edward)로부터 나무,
-                        토지와 대화하는 방법을 배우고 자연과 인간의 관계에 대해 생각해 봅니다.
+                    <p>호주 킴벌리의 아름다운 풍경을 통한 놀라운 여행. <br>샌달우드를 재배하는 농부 에드워드(Edward)로부터 나무,
+                        토지와 대화하는 방법을 배우고 자연과 인간의 관계에 대해 생각해 봅니다.<br>
                         또한 자연이 우리의 감각을 일깨우는 방식에 감사함을 느끼게 됩니다.
                     </p>
             </div>
@@ -188,8 +188,8 @@
                         </video>
                         <h1>장미 수확</h1>
                         <p>프랑스 그라스</p>
-                        <p>프랑스 남부 산과 바다 그 중간 지점에서 자생하는 세계에서 가장 향기로운 장미가 꽃봉오리를 펼칠 준비를 하고 있습니다.
-                            그라스의 외곽에 위치한 작은 마을 파이앙스(Fayence)는 '5월의 장미(Rose de Mai)'로 알려진 로즈 센티폴리아의 고향입니다.
+                        <p>프랑스 남부 산과 바다 그 중간 지점에서 자생하는 세계에서 가장 향기로운 장미가 꽃봉오리를 펼칠 준비를 하고 있습니다.<br>
+                            그라스의 외곽에 위치한 작은 마을 파이앙스(Fayence)는 '5월의 장미(Rose de Mai)'로 알려진 로즈 센티폴리아의 고향입니다.<br>
                             풍부하고 깊은 향기로 많은 사랑을 받는 이 장미는 1년에 한 번, 3주 동안만 꽃을 볼 수 있는 가장 희귀하고 수확하기 어려운 꽃입니다.
                         </p>
             </div>
@@ -199,7 +199,7 @@
                         </video>
                         <h1>베르가못 수확</h1>
                         <p>이탈리아 레지오 칼라브리아</p>
-                        <p>이탈리아 남부 칼라브리아(Calabria) 해안 지역에서만 재배되는 감귤류 과일인 베르가못은 에센셜 오일의 원료로 유명합니다.
+                        <p>이탈리아 남부 칼라브리아(Calabria) 해안 지역에서만 재배되는 감귤류 과일인 베르가못은 에센셜 오일의 원료로 유명합니다.<br>
                             이 지역에서 베르가못을 재배하는 세 가족의 장인 정신을 들여다봅니다.
                         </p>
             </div>
@@ -210,15 +210,15 @@
                 <img src="/project1/images/concrete.jpg" alt="">
                 <h3>콘크리트 캔들</h3>
                 <P>미국 메인 주</P>
-                <p>각각의 콘크리트 용기는 미국 메인주에서 발생하는 석분을 재활용하여 만들어졌으며,
-                    캔들은 미국에서 직접 손으로 하나씩 채워 넣었습니다.</p>
+                <p>각각의 콘크리트 용기는 <br>미국 메인주에서 발생하는 석분을 재활용하여 만들어졌으며,<br>
+                    캔들은 미국에서 직접 손으로 <br>하나씩 채워 넣었습니다.</p>
             </div>
 
             <div class="box">
                 <img src="/project1/images/homediffuser.jpg" alt="">
                 <h3>홈 디퓨저</h3>
                 <p>뉴욕 브루클린</p>
-                <p>르 라보 상탈 26 홈 디퓨저는 워터 탱크에 사용되었던 삼나무를 재사용해 만들어집니다.
+                <p>르 라보 상탈 26 홈 디퓨저는 <br>워터 탱크에 사용되었던 삼나무를 재사용해 만들어집니다.<br>
                     오랫동안 뉴욕의 스카이라인을 수놓던 이 워터 탱크의 목재에는 수십 년간의 태양, 바람, 비, 눈 등 시간의 흔적이 담겨 있습니다.</p>
             </div>
 
@@ -226,24 +226,24 @@
                 <img src="/project1/images/neonsign.png" alt="">
                 <h3>네온 사인</h3>
                 <p>뉴욕 주 뉴욕 시</p>
-                <p>뉴욕에서 수작업으로 제작된 네온 사인</p>
+                <p>뉴욕에서 수작업으로 제작된 <br>네온 사인</p>
             </div>
 
             <div class="box">
                 <img src="/project1/images/spron.jpeg" alt="">
                 <h3>왁스칠 캔버스 앞치마</h3>
                 <p>뉴욕 브루클린</p>
-                <p>르 라보의 랩 테크니션은 뉴욕 브루클린에서 제작된 왁스 처리된 캔버스 앞치마를 착용합니다.</p>
+                <p>르 라보의 랩 테크니션은 <br>뉴욕 브루클린에서 제작된 왁스 처리된 캔버스 앞치마를 착용합니다.</p>
             </div>
         </div>
-    </secttion>
+    </section>
 
     <!--community section ends-->
 
 
     <!--All ingreidents section starts-->
 
-    <secttion class="allingredients" id="allingredients">
+    <section class="allingredients" id="allingredients">
             <h1 class="heading"> le labo <span>All ingredients</span></h1>
         <div class="box-container">
             <div class="box">
@@ -346,23 +346,25 @@
                 </div>
             </div>
         </div>
-    </secttion>
+    </section>
 
     <!--All ingreidents section ends-->
 
 
     <!--Establish section starts-->
-    <secttion class="establish" id="establish">
+    <section class="establish" id="establish">
         <h1 class="heading"> le labo <span>establish</span> </h1>
         <div class="box-container">
             <div class="box">
                 <img src="/project1/images/establishment.jpeg" alt="">
-                <h3>브랜드의 설립</h3>
-                <p>르 라보는 2006년 진귀하고 독특한 어떤 것, 즉 느리지만 아름다운 향수에 중점을 둔 향수 실험실을 만들고자 하는 두 친구가 설립한 브랜드입니다.
+                <div class="box-box">
+                    <h3>브랜드의 설립</h3>
+                    <p>르 라보는 2006년 진귀하고 독특한 어떤 것,<br> 즉 느리지만 아름다운 향수에 중점을 둔 향수 실험실을 만들고자 하는 두 친구가 설립한 브랜드입니다.<br>
                     이들은 놀리타(뉴욕 엘리자베스 거리 233번지)에 첫 랩을 열었습니다.</p>
+                </div>
             </div>
         </div>
-    </secttion>
+    </section>
 
     <!--Establish section ends-->
 
@@ -370,25 +372,39 @@
 
     <!--classic collection section starts-->
 
-    <!-- <secttion class="classiccollection" id="classiccollection">
-        <h1 class="heading"> le labo <span>classic collection</span> </h1>
+    <section class="classiccollection" id="classiccollection">
+        <h1 class="heading"> le labo <span>classic collection</span></h1>
         <div class="box-container">
             <div class="box">
-                <img src="" alt="">
+                <img src="/project1/images/lavande31_15ml.jpg" alt="">
                 <h3>LAVANDE 31</h3>
                 <h2>라방드 31</h2>
                 <h1>15ml 오드 퍼퓸</h1>
                 <div class="price">132,000원</div>
                 <a href="#" class="btn">장바구니 담기</a>
             </div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box">
+                <img src="/project1/images/lavande31_50ml.jpg" alt="">
+                <h3>LAVANDE 31</h3>
+                <h2>라방드 31</h2>
+                <h1>50ml 오드 퍼퓸</h1>
+                <div class="price">310,000원</div>
+                <a href="#" class="btn">장바구니 담기</a>
+            </div>
+            <div class="box">
+                <img src="/project1/images/lavande31_100ml.jpg" alt="">
+                <h3>LAVANDE 31</h3>
+                <h2>라방드 31</h2>
+                <h1>100ml 오드 퍼퓸</h1>
+                <div class="price">440,000원</div>
+                <a href="#" class="btn">장바구니 담기</a>
+            </div>
             <div class="box"></div>
         </div>
-    </secttion> -->
+    </section>
 
 
-    <!--classic collection secttion ends-->
+    <!--classic collection section ends-->
 
     <!--js 파일 링크-->
     <script src="lelabo.js"></script>

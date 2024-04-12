@@ -49,9 +49,13 @@ section{
     text-align:center;
     color: white;
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
+    margin-bottom: 3.5rem;
     font-size: 4rem;
     height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading span{
@@ -152,6 +156,8 @@ section{
     color: var(--main-color);
 }
 
+
+
 .home{
     min-height: 100vh;
     display: flex;
@@ -178,6 +184,13 @@ section{
     padding:1rem 0;
     color:white
 }
+
+.animate__bounceIn:hover{
+    /* animation-duration: 3s; */
+    animation: infinite;
+}
+
+
 
 .manifesto .heading{
     color: var(--main-color);
@@ -209,6 +222,7 @@ section{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(30rem, lfr));
     gap:1.5rem;
+    justify-content: center;
 }
 
 .lab .box-container .box{
@@ -234,6 +248,7 @@ section{
     /* display: flex; */
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    /* justify-content: center; */
 }
 
 .community .box-container .box{
@@ -265,6 +280,7 @@ section{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    justify-content: center;
 }
 
 .community .box-container-1 .box{
@@ -312,6 +328,10 @@ section{
     height: 20rem;
 }
 
+.allingredients .box-container .box img:hover{
+    height: 30rem;
+}
+
 .allingredients .box-container .box h3{
     color: white;
     font-size: 3rem;
@@ -323,21 +343,21 @@ section{
     display: flex;
 }
 
-.establish .heading{
-    display: center;
-}
+
+
 
 .establish .box-container{
     grid-template-columns: repeat(auto-fit, minmax(30rem, lfr));
     gap:1.5rem;
-    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .establish .box-container .box{
-    padding: 5rem;
     text-align: center;
     border: var(--border);
-    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .establish .box-container .box img{
@@ -346,13 +366,18 @@ section{
 
 .establish .box-container .box h3{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem 0;
-    font-style:normal;
+}
+.establish .box-container .box p{
+    color: white;
+    font-size: medium;
+    text-align: center;
 }
 
-
-
+.classiccollection .box-container .box img{
+    height: 30rem;
+}
 
 
 
