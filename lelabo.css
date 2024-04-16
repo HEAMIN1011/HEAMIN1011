@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&family=Dokdo&family=Dongle&family=Gothic+A1&family=Hahmlet:wght@100..900&family=Nanum+Brush+Script&family=Sedan:ital@0;1&family=Seymour+One&family=Shadows+Into+Light&display=swap');
+
 
 
 :root{
@@ -7,8 +8,8 @@
     --bg:#010103;
     --border:.1rem solid rgba(225,225,225,.3);
 }
+
 *{
-    font-family: "Roboto", sans-serif; 
     margin: 0; padding: 0;
     /* box-sizing: border-box; */
     outline: none; border: none;
@@ -54,10 +55,9 @@ section{
     height: 100px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
-
 .heading span{
     color: var(--main-color);
     text-transform: uppercase;
@@ -94,26 +94,15 @@ section{
 
 .header .navbar a{
     margin: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
+    font-family: "Gothic A1", sans-serif;
 }
 
 .header .navbar a:hover{
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
-}
-
-.header .icons div{
-    color: white;
-    cursor: pointer;
-    font-size: 2rem;
-    margin-left: 2rem;
-    display: flex;
-}
-
-.header .icons div:hover{
-    color: var(--main-color);
 }
 
 #menu-btn{
@@ -156,6 +145,18 @@ section{
     color: var(--main-color);
 }
 
+.header .icons div{
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
 
 
 .home{
@@ -175,18 +176,23 @@ section{
     font-size: 6rem;
     text-transform: uppercase;
     color: white;
+    font-family: "Anton", sans-serif;
 }
 
 .home .content p{
-    font-size: 2rem;
-    font-weight: lighter;
+    font-size: 4rem;
     line-height: 2;
     padding:1rem 0;
-    color:white
+    color:white;
+    font-family: "Dongle", sans-serif;
 }
 
 .animate__bounceIn:hover{
     /* animation-duration: 3s; */
+    animation: infinite;
+}
+
+.animate__fadeIn:hover{
     animation: infinite;
 }
 
@@ -211,11 +217,13 @@ section{
     color: white;
 }
 .manifesto .row .content p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     padding: 1rem 0;
     line-height: 1;
-    font-style: italic;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .lab .box-container{
@@ -274,6 +282,7 @@ section{
     padding: 1rem 0;
     font-style:normal;
     text-align: center;
+    font-family: "Dokdo", system-ui;
 }
 
 .community .box-container-1{
@@ -307,6 +316,9 @@ section{
     font-size: 1.4rem;
     padding: 1rem 0;
     font-style:normal;
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
 }
 
 .allingredients .box-container{
@@ -321,15 +333,21 @@ section{
     text-align: center;
     border: var(--border);
     display: flex;
-    /* flex-direction: column; */
+    height: 20rem;
+    position: relative;
 }
 
 .allingredients .box-container .box img{
     height: 20rem;
+    position: absolute;
+    object-fit: cover;
+    
 }
 
-.allingredients .box-container .box img:hover{
-    height: 30rem;
+.allingredients .box-container .box #two:hover{
+    opacity: 0;
+    cursor: pointer;
+
 }
 
 .allingredients .box-container .box h3{
@@ -375,29 +393,153 @@ section{
     text-align: center;
 }
 
-.classiccollection .box-container .box img{
-    height: 30rem;
+
+
+.classiccollection .box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
 }
 
+.classiccollection .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    width: 230px;
+}
+.classiccollection .box-container .box img{
+    height: 25rem;
+    display:flex;
+}
 
+.classiccollection .box-container .box h1{
+    color: white;
+    font-size: 3rem;
 
-
-
-
-
-
-
-
-
+}
+.classiccollection .box-container .box h2{
+    color: white;
+    font-size: 2.5rem;
+}
+.classiccollection .box-container .box h3{
+    color: white;
+    font-size: 1.9rem;
+}
 
 .classiccollection .box-container .box .price{
     color: white;
-    font-size: 3rem;
-    padding: r5em 0;
+    font-size: 1.8rem;
+    padding: 2rem 0;
+}
+
+.classiccollection .box-container .box:hover{
+    background:#fff;
+}
+
+.classiccollection .box-container .box:hover > *{
+    color:var(--black);
 }
 
 
+.shop .row{
+    display:flex;
+    background:var(--black);
+    flex-wrap:wrap;
+    gap: 1rem;
+}
 
+.shop .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit:cover;
+}
+
+.shop .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+
+.shop .row form h3{
+    text-transform:uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.shop .row form .inputBox{
+    display:flex;
+    align-items:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
+}
+
+.shop .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.shop .row form .inputBox input{
+    color:#fff;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 2rem;
+    text-transform: none;
+    background: none;
+}
+
+.footer{
+    background:var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size:2rem;
+    color:#fff; 
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .share #insta:hover{
+    background-color: darksalmon;
+}
+.footer .share #ssg:hover{
+    background-color: red;
+}
+.footer .share #homepage:hover{
+    background-color: lightblue;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:var(--border);
+    font-size: 1.3rem;
+}
+
+.footer .links a:hover{
+    background:var(--main-color);
+}
 
 
 
