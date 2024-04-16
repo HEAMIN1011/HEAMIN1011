@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&family=Dokdo&family=Dongle&family=Gothic+A1&family=Hahmlet:wght@100..900&family=Nanum+Brush+Script&family=Sedan:ital@0;1&family=Seymour+One&family=Shadows+Into+Light&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Gothic+A1&family=Gowun+Dodum&family=Jua&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Saira+Stencil+One&family=Song+Myung&family=Yeon+Sung&display=swap');
 
 
 :root{
@@ -51,12 +50,12 @@ section{
     color: white;
     text-transform: uppercase;
     margin-bottom: 3.5rem;
-    font-size: 4rem;
-    height: 100px;
-
-    display: flex;
+    /* height: 100px; */
+    /* display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-end; */
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 6rem;
 }
 .heading span{
     color: var(--main-color);
@@ -94,9 +93,9 @@ section{
 
 .header .navbar a{
     margin: 0 1rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: white;
-    font-family: "Gothic A1", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .header .navbar a:hover{
@@ -166,6 +165,7 @@ section{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/project1/images/LELABO_main.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
+    justify-content: center;
 }
 
 .home .content{
@@ -173,28 +173,110 @@ section{
 }
 
 .home .content h3{
-    font-size: 6rem;
-    text-transform: uppercase;
-    color: white;
+    font-size: 9rem;
+    color:#E8D8C4;
     font-family: "Anton", sans-serif;
+    font-weight: lighter;
 }
 
 .home .content p{
-    font-size: 4rem;
+    font-size: 3.2rem;
     line-height: 2;
     padding:1rem 0;
     color:white;
-    font-family: "Dongle", sans-serif;
+    font-family: "Nanum Pen Script", cursive;
 }
 
-.animate__bounceIn:hover{
-    /* animation-duration: 3s; */
+.animate__backOutRight:hover{
     animation: infinite;
 }
 
 .animate__fadeIn:hover{
     animation: infinite;
 }
+
+.explain h1{
+    color:  var(--main-color);
+}
+
+.explain .box-container article{
+    padding: 10px;
+    background:black;
+}
+
+.explain h2{
+    font-size: 3rem;
+    font-family: "Jua", sans-serif;
+    font-weight: lighter;
+    justify-content: start;
+    color :white;
+}
+.explain .box-container article p{
+    font-size: 2rem;
+    font-family: "Gowun Dodum", sans-serif;
+    color: lightgray;
+}
+.heading-1{
+    font-size: 3rem;
+    color: lightsteelblue;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: lighter;
+    margin: 2rem;
+}
+.explain .box-container-1 article{
+    padding: 10px;
+    margin: 10px;
+    background:#E7F6F2;
+    width: 300px;
+    height: 200px;
+    
+}
+.explain .box-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.explain .box-container-1 h2{
+    color: #30475E;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.explain .box-container-1 p{
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
+.heading-2{
+    font-size: 3rem;
+    color: lightsteelblue;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: lighter;
+    margin: 2rem;
+
+}
+
+.box-container-2 li{
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 3rem;
+    color: #0B60B0;
+}
+.box-container-2 span{
+    color:#7D0A0A;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+.box-container-2 p{
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -213,7 +295,7 @@ section{
     padding: 2rem;
 }
 .manifesto .row .content h3{
-    font-size: 10rem;
+    font-size: 7rem;
     color: white;
 }
 .manifesto .row .content p{
@@ -221,7 +303,7 @@ section{
     color: white;
     padding: 1rem 0;
     line-height: 1;
-    font-family: "Nanum Brush Script", cursive;
+    font-family: "Song Myung", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -234,15 +316,20 @@ section{
 }
 
 .lab .box-container .box{
-    padding: 5rem;
+    /* padding: 5rem; */
     text-align: center;
     border: var(--border);
-    height: 300px;
+    height: 500px;
     width: 600px;
+    
 }
 
 .lab .box-container .box img{
-    height: 20rem;
+    height: 25rem;
+}
+
+.lab .box-container .box img:hover{
+    height: 30rem;
 }
 
 .lab .box-container .box h3{
@@ -250,6 +337,15 @@ section{
     font-size: 3rem;
     padding: 1rem 0;
     font-style:normal;
+    font-weight: 100;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.lab .box-container .box p{
+    color: white;
+    font-size: 1.7rem;
+    font-family: "Gowun Dodum", sans-serif;
+    margin: 3rem;
 }
 
 .community .box-container{
@@ -272,9 +368,16 @@ section{
     width: 500px;
 }
 
+.community .box-container .box video:hover{
+    width: 800px;
+}
+
+
 .community .box-container .box h1{
-    font-size: 3rem;
-    color: white;
+    font-size: 3.5rem;
+    color:#535C91;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight:lighter;
 }
 .community p{
     color: white;
@@ -282,7 +385,7 @@ section{
     padding: 1rem 0;
     font-style:normal;
     text-align: center;
-    font-family: "Dokdo", system-ui;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 .community .box-container-1{
@@ -296,8 +399,8 @@ section{
     padding: 5rem;
     text-align: center;
     border: var(--border);
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
 }
 
 .community .box-container-1 .box img{
@@ -307,22 +410,22 @@ section{
 
 .community .box-container-1 .box h3{
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 1rem 0;
-    font-style:normal;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: lighter;
 }
 .community .box-container-1 .box p{
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
     font-style:normal;
-    font-family: "Hahmlet", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-family: "Gowun Dodum", sans-serif;
+    margin: 1rem;
 }
 
 .allingredients .box-container{
-    display: flex;
+    display: flex; 
     grid-template-columns: repeat(auto-fit, minmax(30rem, lfr));
     gap:1.5rem;
     flex-wrap: wrap;
@@ -337,10 +440,15 @@ section{
     position: relative;
 }
 
+.allingredients .box-box{
+    display: flex;
+}
+
 .allingredients .box-container .box img{
     height: 20rem;
     position: absolute;
     object-fit: cover;
+    float: left;
     
 }
 
@@ -354,14 +462,18 @@ section{
     color: white;
     font-size: 3rem;
     padding: 1rem 0;
+    /* display: flex; */
 }
 .allingredients .box-container .box p{
     color: white;
     font-size: medium;
-    display: flex;
+    /* display: flex; */
 }
 
-
+.allingredients img{
+    float: left;
+    margin-right: 1rem;
+}
 
 
 .establish .box-container{
@@ -384,13 +496,17 @@ section{
 
 .establish .box-container .box h3{
     color: white;
-    font-size: 2rem;
-    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: .8rem 0;
+    font-family: "Black Han Sans", sans-serif;
 }
 .establish .box-container .box p{
     color: white;
     font-size: medium;
     text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
+    margin: 2rem;
 }
 
 
@@ -403,10 +519,10 @@ section{
 }
 
 .classiccollection .box-container .box{
-    padding: 5rem;
+    padding: 4rem;
     text-align: center;
     border: var(--border);
-    width: 230px;
+    /* width: 230px; */
 }
 .classiccollection .box-container .box img{
     height: 25rem;
@@ -416,21 +532,28 @@ section{
 .classiccollection .box-container .box h1{
     color: white;
     font-size: 3rem;
-
+    font-weight: lighter;
+    font-family: "Anton", sans-serif;
 }
 .classiccollection .box-container .box h2{
     color: white;
     font-size: 2.5rem;
+    font-family: "Gothic A1", sans-serif;
+    /* font-weight: lighter; */
 }
 .classiccollection .box-container .box h3{
     color: white;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 2rem;;
+
 }
 
 .classiccollection .box-container .box .price{
     color: white;
-    font-size: 1.8rem;
-    padding: 2rem 0;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    font-family: "Nanum Gothic", sans-serif;
 }
 
 .classiccollection .box-container .box:hover{
