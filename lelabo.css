@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Gothic+A1&family=Gowun+Dodum&family=Jua&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Saira+Stencil+One&family=Song+Myung&family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Stint+Ultra+Condensed&family=Gothic+A1&family=Gowun+Dodum&family=Jua&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Saira+Stencil+One&family=Song+Myung&family=Yeon+Sung&display=swap');
 
 
 :root{
@@ -9,7 +9,8 @@
 }
 
 *{
-    margin: 0; padding: 0;
+    margin: 0;
+    /* padding: 0; */
     /* box-sizing: border-box; */
     outline: none; border: none;
     text-decoration: none;
@@ -65,10 +66,17 @@ section{
     margin-top: 1rem;
     display: inline-block;
     padding: .9rem 3rem;
-    font-size: 1.7rem;
-    color: white;
-    background: var(--main-color);
+    font-size: 2rem;
+    color: gray;
+    background:lightgray;
     cursor: pointer;
+}  
+
+#btn_scrollStart{
+    position: fixed;
+    right:100px;
+    bottom:100px;
+    color: #7D0A0A;
 }
 
 .btn:hover{
@@ -209,20 +217,25 @@ section{
     font-family: "Jua", sans-serif;
     font-weight: lighter;
     justify-content: start;
-    color :white;
+    color :#9AC8CD;
 }
+
+.heading-1{
+    font-size: 3.5rem;
+    color:#F7DCB9;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: lighter;
+    margin-top: 7rem;
+    text-decoration: underline;
+
+}
+
 .explain .box-container article p{
     font-size: 2rem;
     font-family: "Gowun Dodum", sans-serif;
     color: lightgray;
 }
-.heading-1{
-    font-size: 3rem;
-    color: lightsteelblue;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: lighter;
-    margin: 2rem;
-}
+
 .explain .box-container-1 article{
     padding: 10px;
     margin: 10px;
@@ -246,32 +259,42 @@ section{
     margin: 1rem;
 }
 
-.heading-2{
-    font-size: 3rem;
-    color: lightsteelblue;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: lighter;
-    margin: 2rem;
-
-}
-
 .box-container-2 li{
     font-family: "Gowun Dodum", sans-serif;
     font-size: 3rem;
-    color: #0B60B0;
+    color: #9AC8CD;
 }
 .box-container-2 span{
     color:#7D0A0A;
     font-family: "Gowun Dodum", sans-serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
 .box-container-2 p{
     font-family: "Gowun Dodum", sans-serif;
     font-size: 2rem;
     color: white;
+    margin-bottom: 2rem;
 }
 
+label{
+    color: #9AC8CD;
+    font-size: 5rem;
+    font-family: "Stint Ultra Condensed", serif;
+
+}
+
+h5{
+    font-size: 1.5rem;
+    color: red;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: lighter;
+}
+.box-3 p{
+    color: white;
+    font-size: 2rem;
+    font-family: "Gowun Dodum", sans-serif;
+}
 
 
 
@@ -303,7 +326,7 @@ section{
     color: white;
     padding: 1rem 0;
     line-height: 1;
-    font-family: "Song Myung", serif;
+    font-family: "Yeon Sung", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -366,10 +389,13 @@ section{
 
 .community .box-container .box video{
     width: 500px;
+    transition: 1s ease;
 }
 
 .community .box-container .box video:hover{
     width: 800px;
+    border-radius: 50%;
+    transition: 1s ease;
 }
 
 
@@ -425,7 +451,6 @@ section{
 }
 
 .allingredients .box-container{
-    display: flex; 
     grid-template-columns: repeat(auto-fit, minmax(30rem, lfr));
     gap:1.5rem;
     flex-wrap: wrap;
@@ -435,39 +460,49 @@ section{
 .allingredients .box-container .box{
     text-align: center;
     border: var(--border);
-    display: flex;
+    /* display: flex; */
     height: 20rem;
-    position: relative;
+    /* position: absolute; */
+}
+.box-in{
+    margin: 0px auto;
+    position: relative
 }
 
-.allingredients .box-box{
-    display: flex;
+.two{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+.box-in:hover .two{
+    /* display: block; */
+    opacity: 1;
+    width: 1090px;
 }
 
 .allingredients .box-container .box img{
     height: 20rem;
-    position: absolute;
-    object-fit: cover;
-    float: left;
-    
-}
-
-.allingredients .box-container .box #two:hover{
-    opacity: 0;
-    cursor: pointer;
-
 }
 
 .allingredients .box-container .box h3{
     color: white;
     font-size: 3rem;
     padding: 1rem 0;
-    /* display: flex; */
+    font-family: "Gothic A1", sans-serif;
+    font-style: italic;
+}
+.allingredients .box-container .box span{
+    color: lightcoral;
+    font-size: 2rem;
 }
 .allingredients .box-container .box p{
     color: white;
-    font-size: medium;
-    /* display: flex; */
+    font-size: 1.5rem;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 .allingredients img{
@@ -663,16 +698,6 @@ section{
 .footer .links a:hover{
     background:var(--main-color);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* media queries*/
